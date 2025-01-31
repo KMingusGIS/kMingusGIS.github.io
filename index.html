@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+    <link rel="icon" href="./assets/images/1311.png" />
+		<title>Kyle Mingus Portfolio</title>
+    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+
+		<script defer src="./js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="./index.html">
+        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
+        <span class="nav-title">K. Mingus Portfolio</span>
+         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+        <a class="button" href="mailto:kyle.mingus@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PORTFOLIO HEADER -->
+      <div id="portfolio-header">
+        <div id="portfolio-header-image-container">
+          <!-- 
+            TODO
+
+            - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
+            - Change the number to point to your Unemployable & replace the OpenSea link with your own
+            - If you aren't using an Unemployable as your image, remove the entire "a" element
+          -->
+          <img src="./assets/images/selfie.jpg" class="portfolio-header-image">
+          <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
+            <span class="image-caption">Me in my natural habitat.</span>
+          </a>
+        </div>
+
+          <!-- 
+            TODO
+
+            - Change the main-title to whatver you want
+            - Change the body-text after that to a quick introduction to what you do
+            - Edit the button text if you feel like it. It will link to the projects section below.
+          -->
+        <div id="portfolio-header-text-container">
+            <div class="header-text">
+              <span class="main-title">Hi, I'm Kyle.</span>
+              <div class="body-text">I’m a freelance GIS professional who loves everything cartographic and has a passion for helping people resolve their spatial problems.</div>
+            </div>
+            <a class="button" id="my-work-link">
+              <span class="button-text">Check out my projects</span> 
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+        </div>
+      </div>
+
+      <!-- ABOUT SECTION -->
+      <!-- 
+        TODO
+
+        - Change the subheader-text to whatever header you want
+        - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
+      -->
+      <div id="about-section">
+        <span class="subheader-text">My Background / About Me</span>
+        <div class="about-section-content">
+          <div class="body-text">I've been working with GIS for 18 years, in various capacities; I've worked for local governments, nonprofit groups, and private consultants to provide GIS services for a diverse range of clients. I have a BA in Urban Studies from Trinity University, a Masters of Urban Planning and Policy degree from the University of Illinois at Chicago, and an MS in GIS Administration from the University of West Florida. Throughout my career, I keep coming back to GIS because of my passion for geospatial work and the powerful (and underutilized) ways in which it can be used to examine data in a different light.</div>
+          <div class="body-text">I am looking for part time/contract GIS work that can be performed remotely. I excel in working with Python, CSS, JavaScript, and SQL. I also have significant experience with PostgreSQL, Microsoft SQL Server, PostGIS, and GeoJSON. I have been an ESRI user since 2007, and am also quite comfortable with QGIS. If you have extra GIS work that needs to be done, reach out to me via e-mail at kyle.mingus@gmail.com or throw some time on my calendar <a href="https://calendly.com/kyle-mingus/30min" target="_blank">here.</a></div>
+        </div>
+      </div>
+
+      <!-- PROJECTS / MY WORK SECTION -->
+      <div id="my-work-section">
+        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
+        <span class="subheader-text">My Work / My Projects</span>
+
+        <div class="projects-container">
+          <!-- 
+            TODO
+
+            This is where the project cards live. Here's a base level project card for you to copy:
+            <div class="project-card">
+              <img src="./assets/images/IMAGE_NAME" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">PROJECT_NAME</div>
+                <div class="body-text project-card-text">SMALL_PROJECT_DESCRIPTION</div>
+              </div>
+              <a class="button" href="./project-pages/PROJECT_PAGE_NAME.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+            </div>
+
+            - To add a project to the this area, copy the above, paste it below this comment, and change the following:
+                - IMAGE_NAME: the name of the image file in assets/images
+                - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
+                - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
+                - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
+          -->
+          <div class="project-card">
+            <img src="./assets/images/finalmap1b.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Chicago Affordable Housing Resource Map</div>
+              <div class="body-text project-card-text">A website I designed to allow Chicago residents and developers easy access to all information needed to find or build affordable housing.</div>
+            </div>
+            <a class="button" href="./project-pages/chicago_affordable_housing.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/finalprojecthotspot1320.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Chicago Suburban Home Foreclosure Analysis</div>
+              <div class="body-text project-card-text">This project examines housing data in several Chicago area school districts to determine whether school quality impacts foreclosure rates.</div>
+            </div>
+            <a class="button" href="./project-pages/home_foreclosure_map.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/housing.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Where is housing affordable in the US in 2022?</div>
+              <div class="body-text project-card-text">An examination of cost of living/median incomes for US metro areas to determine where housing is affordable in 2022.</div>
+            </div>
+            <a class="button" href="./project-pages/housing_income_map.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+		   <div class="project-card">
+              <img src="./assets/images/edwardsaquifer.jpg" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">Development in the Edwards Aquifer Recharge Zone, 2000-2020</div>
+                <div class="body-text project-card-text">This project uses remote sensing data to determine change in impermeable ground cover in the environmentally sensitive Edwards Aquifer recharge zone.</div>
+              </div>
+              <a class="button" href="./project-pages/edwards_aquifer_map.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+            </div>
+			 <div class="project-card">
+              <img src="./assets/images/germantown.jpg" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">Germantown, Maryland Area Land Use Map</div>
+                <div class="body-text project-card-text">An analysis of land uses around Germantown, Maryland created with remote sensing data.</div>
+              </div>
+              <a class="button" href="./project-pages/germantown_remote_sensing.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+            </div>
+			 <div class="project-card">
+              <img src="./assets/images/healthcare.jpg" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">Health Outcomes/Insurance Availability Map</div>
+                <div class="body-text project-card-text">An overview of the relationships between health quality and health insurance availability across the US.</div>
+              </div>
+              <a class="button" href="./project-pages/insurance_health_map.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+            </div>
+			 <div class="project-card">
+              <img src="./assets/images/WA.jpg" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">Precipitation Averages for Washington State, 1981-2010</div>
+                <div class="body-text project-card-text">This project uses remote sensing data to visualize average precipitation for Washington state over a 30-year period.</div>
+              </div>
+              <a class="button" href="./project-pages/washington_precip_map.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+            </div>
+			 <div class="project-card">
+              <img src="./assets/images/Coronado.jpg" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">Coronado National Forest Bear Corridor Analysis</div>
+                <div class="body-text project-card-text">An analysis of likely paths to be used by bears traveling between separate units of the Coronado National Forest.</div>
+              </div>
+              <a class="button" href="./project-pages/coronado_bear_map.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <!-- 
+        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
+
+        This should be the same across all pages.
+      -->
+     
+      <!-- 
+        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
+      
+        This should be the same across all pages.
+      -->
+      
+      <!-- 
+        TODO - Change the email after "mailto" to your contact email 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" href="mailto:kyle.mingus@gmail.com">
+        <image src="./assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>

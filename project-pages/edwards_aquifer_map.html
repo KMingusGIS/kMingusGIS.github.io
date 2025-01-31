@@ -1,0 +1,160 @@
+
+
+<!-- 
+  IMPORTANT! 
+  
+  Keep this file unchanged to use as a template for all future project pages. 
+
+  For every new project you add to your portfolio, make a copy of this file in the
+  'project-pages' folder with a name related to the project.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+     <link rel="icon" href="../assets/images/1311.png" />
+     <title>Kyle Mingus Portfolio</title>
+    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <!-- 
+          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
+
+          (this should be the same across all pages)
+         -->
+        <span class="nav-title">K. Mingus Portfolio</span>
+        <!-- 
+          TODO - Change the email after 'mailto:' to your email address for contact 
+        
+          (this should be the same across all pages)
+        -->
+        <a class="button" href="mailto:kyle.mingus@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+          <!-- 
+            TODO
+
+            - Change the 'main-title' text to the name of your project
+            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
+            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
+          -->
+        <div class="main-title">Development in the Edwards Aquifer Recharge Zone, 2000-2020</div>
+        <div class="body-text">This project uses remote sensing data to determine change in impermeable ground cover in the environmentally sensitive Edwards Aquifer recharge zone.</div>
+        <image class="project-header-image" src="../assets/images/edwardsaquifer.jpg">
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      <!-- 
+        TODO
+
+        - Change the 'subheader-text' to whatever header you want for project details
+        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+      -->
+      <div id="project-details">
+        <div class="subheader-text">Project Details / Background</div>
+        <div class="project-details-content">
+          <div class="body-text">In this project, I wanted to track landscape changes in the Edwards Aquifer Recharge Zone, an environmentally sensitive area near San Antonio that has seen significant urban development in recent decades. I started this project by acquiring imagery of the study area captured by the USGS's Landsat 7 satellite from the years 2000 and 2020. Because of the failure of the scan line corrector on Landsat 7 in 2003, my 2020 image had significant striping (areas with no data) that would need to be corrected before proceeding.</div>
+          <div class="body-text">I was able to use ERDAS Imagine to destripe my 2020 image using the Layer Stack tool (which allows users to combine multiple layers into a single multispectral image) to fill in the gaps using data from 2019. From there, I performed supervised classification on both images and brought them into ArcMap to complete my analysis, which showed that approximately 11% of the area - about 6.5 square miles - had been converted from permeable to impermeable cover in the period from 2000 to 2020.</div>
+        </div>
+      </div>
+
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+        <div class="subheader-text">Image Gallery</div>
+        <div class="project-gallery-content">
+            <!-- 
+              TODO
+
+              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
+
+              Full Width Image:
+
+                <div class="gallery-image-container">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              Half Width Image: 
+
+                <div class="gallery-image-container half-width">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
+                  - IMAGE_NAME: the name of the image file in assets/images
+                  - IMAGE_CAPTION: to the caption of the image
+            -->
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/edwards_raw_data.jpg" class="gallery-image">
+              <span class="image-caption">An image of the raw LANDSAT 7 image data from 2000 and 2020.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/edwards_supervised_classification.jpg" class="gallery-image">
+              <span class="image-caption">The same data after performing supervised classification in ERDAS Imagine.</span>
+            </div>
+            <div class="gallery-image-container">
+              <img src="../assets/images/edwards_cover.jpg" class="gallery-image">
+              <span class="image-caption">The difference in impervious cover in the recharge zone between 2000 and 2020.</span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <!-- 
+        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
+
+        This should be the same across all pages.
+      -->
+      
+      <!-- 
+        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
+      
+        This should be the same across all pages.
+      -->
+      
+      <!-- 
+        TODO - Change the email after "mailto" to your contact email 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" href="mailto:kyle.mingus@gmail.com">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>
